@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign In - Cake Delights Web Template</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style type="text/css">
+    .container{
+      width: 30%;
+      margin: auto;
+      padding: 51px;
+      background-color: #fcfcfc;
+    }
+    table{
+      margin: auto;
+    }
+    section{
+      background-color: purple;
+      min-height: 519px;
+      padding-top: 70px;
+    }
+    
+}
+input[type="submit"]{
+  padding: 5px;
+  border: 0;
+
+}
+.columns
+{
+    float:left;
+    width:20%;
+    padding-right:10px;
+}
+
+.columns img:hover{
+    opacity: 0.6;
+    transition: 0.3s
+}
+.columns img{
+    padding-bottom:10px;
+}
+#header div ul li a {
+  
+  color: #5b5c5e;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #e8edf1;
+  text-transform: capitalize;
+}
+
+body{
+  font:20px/1.5 Arial;
+}
+footer{
+  width: 100%;
+  min-height: 60px;
+  background-color: pink;
+  padding-top: 20px;
+  text-align: center;
+
+}
+#header a.last {
+  border: 0;
+  padding-right: 0;
+  text-c
+  background-color: white;
+}
+#header div ul li a:hover, #header ul li.current a {
+  color: #b13c68;
+  text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  padding: 5px;
+  border: 0;
+  box-shadow: 5px 10px 8px #888888;
+  
+}
+#content div#about div.aside,
+#content div#services div.aside {
+  float: left;
+  padding: 0;
+  width: 420px;
+}
+
+#content div#services div.aside span {
+  background: url(../images/sprite-icons.gif) no-repeat 0 0;
+  color: #84284D;
+  font-size: 18px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  text-indent: 25px;
+}
+#header div ul li a {
+  background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+  color: #5b5c5e;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #e8edf1;
+  text-transform: capitalize;
+}
+
+#header a.last {
+  border: 0;
+  padding-right: 0;
+  text-c
+  background-color: white;
+  display: inline-block;
+  text-transform: capitalize;
+  color: #FF66B2;
+}
+
+#header div ul li a:hover, #header ul li.current a {
+  
+  text-shadow: 1px 1px 0 #ebb8c7;
+  background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+  background-color: white;
+
+}
+footer{
+  width: 100%;
+  min-height: 60px;
+  background-color: pink;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+
+  </style>
+<body>
+  <div id="header">
+    <div>
+      <div>
+        <div id="logo">
+          <a href="index.html"><img src="images/logo.gif" alt="Logo"/></a>
+        </div>
+        <div>
+          
+          
+        </div>
+      </div>
+      <ul class="a">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li class="current"><a href="product.html">The Pastry shop</a></li>
+        <li class="current"><a href="gal.html">Gallery</a></li>
+        <li class="current"><a href="signin.html">Login</a></li>
+        <li class="current"><a href="contact.html.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <center>
+	<section>        
+  <div class="columns">
+      <img src="images/cake1.jpg" height="250" width="300" style="width:100%" onclick="onClick(this)" >
+<img src="images/cake2.jpg"  height="250" width="300"style="width:100%" onclick="onClick(this)" >
+
+        </div>
+    
+   <div class="columns">      
+        <img src="images/cake3.jpg"  height="250" width="300" style="width:100%" onclick="onClick(this)" >
+      <img src="images/cake13.jpg"  height="250" width="300" style="width:100%" onclick="onClick(this)" >
+      
+   </div>
+    
+    <div class="columns">
+       <img src="images/cake12.jpg"  height="250" width="300" style="width:100%" onclick="onClick(this)" >  
+<img src="images/cake2.jpg"  height="250" width="300" style="width:100%" onclick="onClick(this)" >
+   </div>
+
+   <div class="columns">
+       <img src="images/c3.jpg" height="250" width="300" style="width:100%" onclick="onClick(this)" >  
+<img src="images/c4.jpg" height="250" width="300" style="width:100%" onclick="onClick(this)" >
+   </div>
+ 
+    </section>
+    
+    <div id="Container_box" class="onclickimage" onclick="this.style.display='none'">
+      
+  </div></center>
+    
+<script>
+function onClick(element) {
+  document.getElementById("image_view").src = element.src;
+  document.getElementById("Container_box").style.display = "block";  
+}
+</script>
+    <footer>Copyright &copy; 2006-2008 cake delight  All rights reserved</footer>
+</body>
+</html>

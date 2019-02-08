@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Sign In - Cake Delights Web Template</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style type="text/css">
+		.container{
+			width: 30%;
+			margin: auto;
+			padding: 51px;
+			background-color: #fcfcfc;
+		}
+		table{
+			margin: auto;
+		}
+		section{
+			background-color: purple;
+			min-height: 400px;
+			padding-top: 70px;
+		}
+		
+}
+input[type="submit"]{
+	padding: 5px;
+	border: 0;
+
+}
+
+#header div ul li a {
+	
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+
+body{
+	font:20px/1.5 Arial;
+}
+footer{
+	width: 100%;
+	min-height: 60px;
+	background-color: pink;
+	padding-top: 20px;
+	text-align: center;
+
+}
+#header a.last {
+	border: 0;
+	padding-right: 0;
+	text-c
+	background-color: white;
+}
+#header div ul li a:hover, #header ul li.current a {
+	color: #b13c68;
+	text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	padding: 5px;
+	border: 0;
+	box-shadow: 5px 10px 8px #888888;
+	
+}
+#content div#about div.aside,
+#content div#services div.aside {
+	float: left;
+	padding: 0;
+	width: 420px;
+}
+
+#content div#services div.aside span {
+	background: url(../images/sprite-icons.gif) no-repeat 0 0;
+	color: #84284D;
+	font-size: 18px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	text-indent: 25px;
+}
+#header div ul li a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+
+#header a.last {
+	border: 0;
+	padding-right: 0;
+	text-c
+	background-color: white;
+	display: inline-block;
+	text-transform: capitalize;
+	color: #FF66B2;
+}
+
+#header div ul li a:hover, #header ul li.current a {
+	
+	text-shadow: 1px 1px 0 #ebb8c7;
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+	background-color: white;
+
+}
+footer{
+	width: 100%;
+	min-height: 60px;
+	background-color: blue;
+	padding-top: 20px;
+	text-align: center;
+
+}
+
+
+	</style>
+<body>
+	<div id="header">
+		<div>
+			<div>
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.gif" alt="Logo"/></a>
+				</div>
+				<div>
+					
+					
+				</div>
+			</div>
+			<ul class="a">
+				<li class="current"><a href="index.html">Home</a></li>
+				<li class="current"><a href="product.html">The Pastry shop</a></li>
+				<li class="current"><a href="gal.html">Gallery</a></li>
+				<li class="current"><a href="signin.html">Login</a></li>
+				<li class="current"><a href="contact.html.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<section>
+		<form  class="container">
+		<table>
+		<tr>
+			<td>
+Username :</td>
+<td>
+    <input type="text" id="Username"  required=""></td>
+</tr>
+<tr>
+<td colspan="2"  ><span id="err1" class="errormessage"></span><br></td>
+</tr>
+<tr>
+<td> Password :</td>
+<td><input  type="password" name="passwords" id="passwords" required="" >
+</td>
+</tr>
+<tr>
+<td colspan="2"  ><span id="err2" class="errormessage"></span><br></td>
+</tr>
+<tr>
+<td colspan="2"  ><input  type="submit" value="Login" id="btnsubmit" ></td>
+</tr>
+    <tr>
+<td colspan="2" class="logintext"><p>New User?<a href="SignUp.html" class="p_d2">SignUp here</a></p></td>
+</tr>
+</table> 
+</form> 
+
+	</section>
+                         
+
+<script>
+    var btns=document.getElementById('btnsubmit');
+    btns.onclick=function(e){
+        val();
+    };
+    
+    function val()
+    {
+        var name=document.getElementById('Username');
+        var pass=document.getElementById('passwords');
+        if(name.checkValidity)
+            {
+                document.getElementById('err1').innerHTML=name.validationMessage;
+            }
+        if(pass.checkValidity)
+            {
+                document.getElementById('err2').innerHTML=pass.validationMessage;
+            }
+    }
+</script>
+		
+	<<footer>Copyright &copy; 2006-2008 cake delight  All rights reserved</footer>
+</body>
+</html>

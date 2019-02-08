@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Cake Delights</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+</head>
+<style type="text/css">
+	#content {
+	background: pink;
+	height: auto;
+	width: 100%;
+}
+
+
+#content div#about div.aside,
+#content div#services div.aside {
+	float: left;
+	padding: 0;
+	width: 420px;
+}
+
+
+#header div ul li a:hover, #header ul li.current a {
+	
+	text-shadow: 1px 1px 0 #ebb8c7;
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+	background-color: white;
+
+}
+	
+	
+#a
+	hover {
+  background-color: yellow;
+
+}
+
+#header div ul li a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+
+
+#header a.last {
+	border: 0;
+	padding-right: 0;
+	text-c
+	background-color: white;
+	display: inline-block;
+	text-transform: capitalize;
+	color: #FF66B2;
+}
+body{
+	font:20px/1.5 Arial;
+}
+footer{
+	width: 100%;
+	min-height: 60px;
+	background-color: pink;
+	padding-top: 20px;
+	text-align: center;
+
+}
+#header div ul li a:hover, #header ul li.current a {
+	color: #b13c68;
+	text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+#content div#services div.aside span {
+	
+	color: #84284D;
+	font-size: 18px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	text-indent: 25px;
+}
+
+}
+</style>
+<body>
+
+<audio controls autoplay="">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="songs.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+	<div id="header">
+		<div>
+			<div>
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.gif" alt="Logo"/></a>
+				</div>
+
+				<div>
+					
+					</form>
+				</div>
+			</div>
+			<ul class="a">
+				<li class="current"><a href="index.html">Home</a></li>
+				<li class="current"><a href="product.html">The Pastry shop</a></li>
+				<li class="current"><a href="gal.html">Gallery</a></li>
+				<li class="current"><a href="signin.html">Login</a></li>
+				<li class="current"><a href="contact.html.html">Contact Us</a></li>
+								<li class="current"><a href="Videos.html">Videos</a></li>
+
+			</ul>
+			
+				
+			</div>
+		</div>
+	</div>
+	<div class="w3-content w3-section" style="max-width:100%;">
+  <img class="mySlides" src="images/cake1.jpg" style="width:100%">
+  <img class="mySlides" src="images/cake2.jpg" style="width:100%">
+  <img class="mySlides" src="images/cake3.jpg" style="width:100%">
+</div>
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	<footer>Copyright &copy; 2006-2008 cake delight  All rights reserved</footer>
+</body>
+</html>
