@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Sign In - Cake Delights Web Template</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style type="text/css">
+		.container{
+			width: 30%;
+			margin: auto;
+			padding: 51px;
+			background-color: #fcfcfc;
+		}
+		table{
+			margin: auto;
+		}
+		section{
+			background-color: purple;
+			min-height: 400px;
+			padding-top: 70px;
+		}
+		
+input[type="submit"]{
+	padding: 5px;
+	border: 0;
+
+}
+
+#header div ul li a {
+	
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+body{
+	font:20px/1.5 Arial;
+}
+footer{
+	width: 100%;
+	min-height: 60px;
+	background-color: pink;
+	padding-top: 20px;
+	text-align: center;
+
+}
+
+#header a.last {
+	border: 0;
+	padding-right: 0;
+	text-c
+	background-color: white;
+}
+#header div ul li a:hover, #header ul li.current a {
+	color: #b13c68;
+	text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	padding: 5px;
+	border: 0;
+	box-shadow: 5px 10px 8px #888888;
+	
+}
+#content div#about div.aside,
+#content div#services div.aside {
+	float: left;
+	padding: 0;
+	width: 420px;
+}
+
+#content div#services div.aside span {
+	background: url(../images/sprite-icons.gif) no-repeat 0 0;
+	color: #84284D;
+	font-size: 18px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	text-indent: 25px;
+}
+#header div ul li a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+
+#header a.last {
+	border: 0;
+	padding-right: 0;
+	text-c
+	background-color: white;
+	display: inline-block;
+	text-transform: capitalize;
+	color: #FF66B2;
+}
+
+#header div ul li a:hover, #header ul li.current a {
+	
+	text-shadow: 1px 1px 0 #ebb8c7;
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+	background-color: white;
+
+}
+footer{
+	width: 100%;
+	min-height: 60px;
+	background-color: blue;
+	padding-top: 20px;
+	text-align: center;
+
+}
+
+
+	</style>
+<body>
+	<div id="header">
+		<div>
+			<div>
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.gif" alt="Logo"/></a>
+				</div>
+				<div>
+					
+					
+				</div>
+			</div>
+			<ul class="a">
+				<li class="current"><a href="index.html">Home</a></li>
+				<li class="current"><a href="product.html">The Pastry shop</a></li>
+				<li class="current"><a href="gal.html">Gallery</a></li>
+				<li class="current"><a href="signin.html">Login</a></li>
+				<li class="current"><a href="contact.html.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<section>
+		<form  class="container" action="thank.html">
+		<label>Card Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select name="type">
+                                <option value="debit">Debit Card</option>
+        						<option value="credit">Credit Card</option>
+                                </select>
+     <br><br>
+     <label>Expirt Date:</label>&nbsp;&nbsp;&nbsp;
+     		<select name="month">
+    				<option>Jun</option>
+        			<option>Feb</option>
+				<option>Mar</option>
+				<option>May</option>
+				<option>Jun</option>
+				<option>July</option>
+				<option>Aug</option>
+				<option>Sep</option>
+				<option>Oct</option>
+				<option>Nov</option>	
+				<option>Dec</option>
+    		</select>
+		<select name="year">
+    			<option>2015</option><option>2016</option>
+                <option>2017</option><option>2018</option>
+                <option>2019</option><option>2020</option>
+                <option>2021</option><option>2022</option>
+                <option>2023</option><option>2024</option>
+                <option>2025</option><option>2026</option>
+                <option>2027</option><option>2028</option>
+                <option>2030</option><option>2031</option>
+                <option>2032</option><option>2033</option>
+                <option>2034</option><option>2035</option>
+                <option>2036</option><option>2037</option>
+                <option>2038</option><option>2039</option>
+                <option>2040</option><option>2041</option>
+                <option>2042</option><option>2043</option>
+                <option>2044</option><option>2045</option>
+                <option>2046</option><option>2047</option>
+                <option>2048</option><option>2049</option><option>2050</option>
+    		</select>
+        <br><br>
+	<label for="cardno">Card No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="caedno" name="num" placeholder="Number" required="" type="text"><br><br>
+    
+	<label for="name">Card Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="name" name="name" placeholder="Name" required="" type="text"><br><br>
+    
+	<label for="password">CVV No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="password" name="cvv" placeholder="Number" required="" type="password"><br><br>
+    
+	<label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pin</label>&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="password" name="password" placeholder="Number" required="" type="password"><br><br><br>
+
+		<input type="submit" name="submit" value="Ok" />
+		<input type="reset" name="reset" value="Reset" />
+</form> 
+
+	</section>
+                         
+
+
+	<footer>Copyright &copy; 2006-2008 cake delight  All rights reserved</footer>
+</body>
+</html>
